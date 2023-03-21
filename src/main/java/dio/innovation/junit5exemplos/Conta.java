@@ -15,15 +15,15 @@ public class Conta {
         return numeroConta;
     }
 
-    public void setNumeroConta(String numeroConta) {
-        this.numeroConta = numeroConta;
-    }
-
     public int getSaldo() {
         return saldo;
     }
 
-    public void setSaldo(int saldo) {
-        this.saldo = saldo;
+    public void lancaCredito(int valor){
+        this.saldo += valor;
+    }
+
+    public void lancaDebito(int valor){
+        this.saldo -= valor;
     }
 }
